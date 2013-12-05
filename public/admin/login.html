@@ -1,0 +1,9 @@
+<h3>Please Login</h3>
+<div>
+  <div class="alert alert-error" ng-show="loginError">Username and/or Password Incorrect</div>
+  <form ng-submit="login()">
+    <div><input type='text' ng-model='user.username' placeholder='username'/></div>
+    <div><input type='password' ng-model='user.password' placeholder='password'/></div>
+    <div><input class="btn" type="submit" value="Login"></div>
+  </form>
+</div>

@@ -1,0 +1,29 @@
+body {
+  padding-top: 40px;
+  background-color: #eee;
+  margin: 0px 50px;
+}
+
+/*h1 {
+  color: #f00;
+  font-size: 4.5em;
+}
+*/
+
+span.cta, span.phone {
+  /*font-size: 3em;*/
+  font-weight:bold;
+  /*margin-bottom: 20px;*/
+}
+
+span.cta { color: #aaa; }
+
+span.phone { color:000; }
+
+span.off { display: none; }
+
+h2.off { }
+
+.footer {
+  margin-bottom: 50px;
+}

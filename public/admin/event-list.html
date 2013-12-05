@@ -1,0 +1,21 @@
+<div ng-show="loggedIn">
+<h3>List of Events</h3>
+<button class="btn btn-success" ng-click="editEvent('new')" data-toggle="modal" href="#editModal">
+<i class="icon-calendar icon-white"></i>&nbsp;Create New Event</button>
+<table class='table table-striped'>
+  <thead>
+  	<tr>
+  	  <th>Event</th>
+  	  <th>&nbsp;</th>
+  	</tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat='event in events'>
+      <td>{{event.name}}</td>
+      <td><button role='button' class='btn' ng-click="editEvent(event)" data-toggle="modal" href="#editModal">Edit</button></td>
+    </tr>
+  </tbody>
+</table>
+<div class="modal hide fade" ng-include="'event-detail.html'" id="editModal" role='dialog'></div>
+</div>
+ 

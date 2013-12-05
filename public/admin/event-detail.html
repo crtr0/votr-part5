@@ -1,0 +1,31 @@
+<div class='modal-header'>
+  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+  <h3 ng-hide='newEvent'>Edit Event: {{event.name}}</h3>
+  <h3 ng-show='newEvent'>New Event</h3>
+</div>
+<form>
+  <fieldset>
+    <div class='modal-body'>
+      <label>Name</label>
+      <input type='text' ng-model="event.name"/>
+      <label>Short Name</label>
+      <input type='text' ng-model="event.shortname"/>
+      <label>Phone Number</label>
+      <input type='text' ng-model="event.phonenumber"/>
+      <label>State</label>
+      <select ng-model="event.state" ng-options="opt for opt in opts"></select>
+      <label>Options</label>
+      <div ng-repeat="vo in event.voteoptions">
+      	<input type='text' ng-model="vo.name"/>
+      	<i class="icon-trash" ng-click='removeVoteOption(vo)'></i>
+        
+      </div>
+    </div>
+    <div class='modal-footer'>
+      <a class="btn" ng-click='addVoteOption()'>Add Option</a>
+      <button type='submit' class="btn btn-danger" data-dismiss="modal" ng-click="delete()">Delete</button>
+      <button type='submit' class="btn btn-primary" data-dismiss="modal" ng-click="save()">Save</button>
+    </div>
+  </fieldset>
+</form>
+

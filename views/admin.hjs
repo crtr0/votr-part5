@@ -1,0 +1,31 @@
+<!doctype html>
+<html ng-app='votr'>
+  <head>
+    <title>Votr - Easy Voting with Your Phone!</title>
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+    <link rel='stylesheet' href='/stylesheets/bootstrap-responsive.min.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/angular.min.js"></script>
+    <script src="/javascripts/angular-resource.min.js"></script>
+    <script src="/javascripts/angular-route.min.js"></script>
+    <script src="/javascripts/votr.js"></script>
+  </head>
+  <body ng-init="username='{{username}}'">
+    <div class="container">
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div style="margin-left:20px">
+          <a class="brand" href="#/">Votr Admin</a>
+          <ul class="nav">
+            <li><a href="#/">Home</a></li>
+            <li ng-show="loggedIn"><a href="#/logout">Logout</a></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+      <div class="content" ng-view></div>
+    </div>
+  </body>
+</html>

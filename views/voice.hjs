@@ -1,0 +1,12 @@
+<Response>
+	<Gather action="/vote/voice/selection" finishOnKey="#" timeout="10">
+		<Say>Welcome to Voter dot co. powered by Twilio</Say> 
+		<Pause length="1"/>
+		<Say>SMS and voice voting made easy.</Say> 
+		<Pause length="1"/>
+	 	<Say>After the tone, please use your phone's keypad to vote.</Say>
+	 	<Pause length="1"/>
+	 	<Say>Hit pound when you are done.</Say>
+	 	<Play>/sounds/beep.mp3</Play>
+	</Gather>
+</Response>
