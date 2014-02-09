@@ -12,9 +12,9 @@ In [part four][] we began adding an web front-end for admins using AngularJS. We
 
 The last thing for us to do to complete this admin portion of the application is to use AngularJS to create a simple CRUD interface for the events in our CouchDB. We’re going to focus on the AngularJS code and templates that we’re going to write to edit our event documents. We’ll finish with a brief run-through of the server-side code. But for now just assume that we’re working with a RESTful API, just like in the authentication scenario in Part 4.
 
-[part one]: http://www.google.com/url?q=http%3A%2F%2Fwww.twilio.com%2Fblog%2F2012%2F09%2Fbuilding-a-real-time-sms-voting-app-part-1-node-js-couchdb.html&sa=D&sntz=1&usg=AFQjCNFpC8f77Pa8nmncuRD_6b7TgldVXA
-[part two]: http://www.google.com/url?q=http%3A%2F%2Fwww.twilio.com%2Fblog%2F2012%2F12%2Fbuilding-a-real-time-sms-voting-app-part-2-socket-io-and-highcharts-js.html&sa=D&sntz=1&usg=AFQjCNGOKJYwCg3wOfkDTNoVkY7Ac8x0Zg
-[part three]: http://www.google.com/url?q=http%3A%2F%2Fwww.twilio.com%2Fblog%2F2013%2F01%2Fbuilding-a-real-time-sms-voting-app-part-3-scaling-node-js-and-couchdb.html&sa=D&sntz=1&usg=AFQjCNFRC5Bk9pmnAJKUvIKejoDmCWZ1-Q
-[part four]: https://www.google.com/url?q=https%3A%2F%2Fwww.twilio.com%2Fblog%2F2013%2F08%2Fvotr-part-4-angularjs-and-authentication-with-couchdb.html&sa=D&sntz=1&usg=AFQjCNFOMRChxkU-RtNLRRA03TTwI3HEEA
+[part one]: http://www.twilio.com/blog/2012/09/building-a-real-time-sms-voting-app-part-1-node-js-couchdb.html
+[part two]: http://www.twilio.com/blog/2012/12/building-a-real-time-sms-voting-app-part-2-socket-io-and-highcharts-js.html
+[part three]: http://www.twilio.com/blog/2013/01/building-a-real-time-sms-voting-app-part-3-scaling-node-js-and-couchdb.html
+[part four]: https://www.twilio.com/blog/2013/08/votr-part-4-angularjs-and-authentication-with-couchdb.html
 
 
