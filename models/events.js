@@ -66,6 +66,7 @@ var config = require('../config')
 
   , save = exports.save = function(cookie, event, callback) {
       if (!event._id) { event._id = 'event:' + event.shortname }
+      if (!event.type) { event.type = 'event' } 
       getDb(cookie).insert(event, function(err, body) {
         callback(err, body);
       });
