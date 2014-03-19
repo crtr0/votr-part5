@@ -65,7 +65,7 @@ var smsify = function(str) {
           else {
             res.render('event', {
               name: event.name, shortname: event.shortname, state: event.state,
-              phonenumber: utils.formatPhone(event.phonenumber), voteoptions: JSON.stringify(event.voteoptions)   
+              phonenumber: formatPhone(event.phonenumber), voteoptions: JSON.stringify(event.voteoptions)   
             });
           }
         });
@@ -166,11 +166,11 @@ var smsify = function(str) {
             else if (event.state == "off") {
                 response.send('<Response><Sms>Voting is now closed.</Sms></Response>');                 
             }
-            else if (!utils.testint(body)) {
+            else if (!testint(body)) {
                 console.log('Bad vote: ' + event.name + ', ' + from + ', ' + body);
                 response.send('<Response><Sms>Sorry, invalid vote. Please text a number between 1 and '+ event.voteoptions.length +'</Sms></Response>'); 
             } 
-            else if (utils.testint(body) && (parseInt(body) <= 0 || parseInt(body) > event.voteoptions.length)) {
+            else if (testint(body) && (parseInt(body) <= 0 || parseInt(body) > event.voteoptions.length)) {
                 console.log('Bad vote: ' + event.name + ', ' + from + ', ' + body + ', ' + ('[1-'+event.voteoptions.length+']'));
                 response.send('<Response><Sms>Sorry, invalid vote. Please text a number between 1 and '+ event.voteoptions.length +'</Sms></Response>'); 
             } 
@@ -183,7 +183,7 @@ var smsify = function(str) {
         }); 
     }
     else {
-        response.render('forbidden');
+        response.status(403).render('forbidden');
     }
 }
 
@@ -193,7 +193,7 @@ var smsify = function(str) {
         response.render('voice');
     }
     else {
-        response.render('forbidden');
+        response.status(403).render('forbidden');
     }
 }
 
