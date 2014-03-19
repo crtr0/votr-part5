@@ -1,6 +1,6 @@
 {
-  "name": "votr-part-4",
-  "version": "0.0.3",
+  "name": "votr-part5",
+  "version": "0.0.2-1",
   "private": true,
   "scripts": {
     "start": "app.js"
@@ -15,8 +15,8 @@
     "request": "2.12.0",
     "validator": "*"
   },
-  "subdomain": "votr-part4",
+  "subdomain": "votr-part5",
   "engines": {
-    "node": "0.6.x"
+    "node": "0.10.x"
   }
 }
