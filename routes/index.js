@@ -147,7 +147,7 @@ var smsify = function(str) {
 
 , voteSMS = exports.voteSMS = function(request, response) {
 
-    if (twilio.validateExpressRequest(request, config.twilio.key) || config.twilio.disableSigCheck) {
+    if (twilio.validateExpressRequest(request, config.twilio.key, {url: config.twilio.smsWebhook}) || config.twilio.disableSigCheck) {
         response.header('Content-Type', 'text/xml');
         var body = request.param('Body').trim();
         
