@@ -1,4 +1,4 @@
-#Wrapping Up Votr: AngularJS and CRUD with RESTful APIs
+# Wrapping Up Votr: AngularJS and CRUD with RESTful APIs
 
 This is the companion repo for the fifth and final part in a series of blog posts about building a real-time SMS and voice voting application using Node.js. It’s been illuminating to walk through the process of building an app that I needed using technologies that I was new to. Let’s take a moment and recap where we’ve been.
 
